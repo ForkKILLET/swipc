@@ -1,0 +1,28 @@
+body {
+  margin: 0;
+}
+
+button {
+  padding: 0 .3em;
+  border: none;
+  outline: none;
+  background-color: inherit;
+  color: inherit;
+  font: inherit;
+  white-space: nowrap;
+}
+button::before {
+  content: '[';
+}
+button::after {
+  content: ']';
+}
+button:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+button:not(:disabled):hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
